@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+main {
+    display: block;
+    min-height: 80%;
+    padding: 20px;
+
+}
+
+header {
+    display: flex;
+    padding: 0 20px;
+    justify-content: space-between;
+    align-items: center;
+    height: 10%;
+    background-color: #A41000;
+    color: white;
+}
+
+#header img {
+    height: 7vh;
+}
+
+#header ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+    height: auto;
+    width: auto;
+    align-items: center;
+}
+
+#header ul a {
+    text-decoration: none;
+    color: currentColor;
+}
+
+#header ul a:hover {
+    background-color: rgba(255, 99, 82, .3);
+    border-radius: 10px;
+    width: fit-content;
+
+}
+
+section {
+    font-size: 17px;
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+form {
+    font-size: 17px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    align-items: center;
+    border-radius: 25px;
+    padding: 30px;
+    height: 550px;
+    width: 350px;
+}
+
+fieldset{
+    border: none;
+    flex-direction: row;
+    display: flex;
+    padding-bottom: 25px;
+    gap: 15px;
+}
+
+form input {
+    background-color: none;
+    height:30px;
+    width: 75%;
+    border:none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+form label {
+    display: flex;
+    height: 30px;
+    width: 25%;
+    font-weight: bold;
+}
+
+form button {
+    padding: 10px 20px;
+    border-radius: 6px;
+    border-width: 2px;
+    display: flex;
+    justify-content: center;
+    background-color: #A41000;
+    color: white;
+    cursor: pointer;
+    transition: all 0.1s ease-in-out;
+}
+
+footer {
+    height: auto;
+    font-size: 3vh;
+    background-color: #A41000;
+    position: bottom;
+    bottom: 0;
+    color: aliceblue;
+}
+
+footer img {
+    height: 30px;
+}

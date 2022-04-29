@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/css/style.css" rel="stylesheet">
+    <title> Home </title>
+</head>
+
+<body>
+    <%- include('./partials/header.ejs') %>
+    <main>
+        <section>
+            <h1>Pokémons</h1>
+        </section>
+        <!--Card começa aqui-->
+        <section id="card_pokemon">
+            <% dadosPokemon.forEach(element=> { %>
+                <a href="detalhes/<%=element.id%>">
+                    <article class="card">
+                        <div class="identificacao">
+                            <div>
+                                <%= element.nome %>
+                            </div>
+                        </div>
+<hr>
+                        <div>
+                            <img class="imagem" src="./<%=element.imagem%>" alt="<%=element.nome%>">
+                        </div>
+                        <hr>
+                        <div class="identificacao">
+                            <div>
+                                <p>Nº <%= element.numero %>
+                                </p>
+                            </div>
+                            <hr>
+                            <div>
+                                <%= element.descricao %>
+                            </div>
+                        </div>
+                    </article>
+                </a>
+                <% }) %>
+        </section>
+    </main>
+
+    <%- include('./partials/footer.ejs') %>
+</body>
+
+</html>
