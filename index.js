@@ -1,4 +1,4 @@
-import * as dotenv from "dotenv"
+require("dotenv").config();
 import express from "express" //importanto o express
 import path from "path" //define caminhos padroes
 
