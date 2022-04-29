@@ -1,5 +1,4 @@
-import * as dotenv from "dotenv";
-
+import * as dotenv from "dotenv"
 import express from "express" //importanto o express
 import path from "path" //define caminhos padroes
 
@@ -16,7 +15,7 @@ app.use(express.json())
 app.set("view engine", "ejs") //faz com que o express reconehça o ejs como html
 app.use(express.static(path.join(__dirname, "public")))
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3001;
 
 app.listen(port, () => { //listen é uma funcao para criar um servidor
     console.log(`Servidor rodando em https://localhost:${port}`)
